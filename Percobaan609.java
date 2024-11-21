@@ -6,11 +6,11 @@ public class Percobaan609 {
 
         int p, l, t, L, vol;
 
-        System.out.print("Masukkan Panjang: ");
+        System.out.println("Masukkan Panjang: ");
         p = input.nextInt();
-        System.out.print("Masukkan Lebar: ");
+        System.out.println("Masukkan Lebar: ");
         l = input.nextInt();
-        System.out.print("Masukkan Tinggi: ");
+        System.out.println("Masukkan Tinggi: ");
         t = input.nextInt();
 
         L = p * l;
@@ -18,5 +18,13 @@ public class Percobaan609 {
 
         vol = p * l * t;
         System.out.println("Volume balok adalah " + vol);
+    }
+    static int hitungLuas (int pjg, int lb){
+        int Luas = pjg * lb;
+        return Luas;
+    }
+    static int hitungVolume (int tinggi, int a, int b){
+        int Volume = hitungLuas (a,b) * tinggi;
+        return Volume;
     }
 }
